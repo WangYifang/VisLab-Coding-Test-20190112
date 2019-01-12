@@ -1,0 +1,334 @@
+html {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #4a4035;
+  background-color: #ffffff;
+
+  /* padding-top: 70px; 
+  padding-bottom: 70px; */
+  margin-top: 70px; 
+  margin-bottom: 70px;
+}
+
+/* div {
+  padding: 5px;
+} */
+text {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+.container {
+    width: 96%;
+}
+.navbar-inverse {
+  background-color: #baccd9;
+  border-color: #c4cbcf;
+}
+.navbar-inverse .navbar-brand {
+  color: #47484c;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #ffffff;
+  background-color: none;
+}
+.navbar-inverse .navbar-text {
+  color: #cccccc;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #f8f4ed;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #5d6368;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #5d6368;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #5d6368;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #5d6368;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #697075;
+}
+
+.navbar-right {
+    text-align:right;
+    float: right!important;
+    margin-right: -15px;
+    float: right;
+    display:block;
+}
+
+li {
+    display: inline;
+    margin-right: 6px;
+}
+
+select {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+span {
+    color: #47484c;
+}
+
+.nav > li > a {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.breadcrumb {
+  margin-bottom: 6px;
+  margin-top: 9px;
+  margin-left: 0px;
+}
+
+.breadcrumb > li > a {
+  color: #9fa39a;
+}
+
+.breadcrumb > li > a:hover {
+  color: #2f90b9;
+  text-decoration: none;
+}
+
+.breadcrumb > li {
+  margin-right: 0px;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 0px;
+}
+
+/* panel */
+.panel {
+  margin-bottom: 0px;
+  background-color: #fffffe;
+  /* background: transparent; */
+  border: 2px solid transparent;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.panel-body {
+  padding: 15px;
+}
+
+.panel-default {
+    border-color: rgba(0, 0, 0, 0.6);
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #47484c;
+  font-size: 14px;
+}
+
+.panel-default>.panel-heading {
+    color: #47484c;
+    /* background-color: #e2e1e4; */
+    background-color: #c4cbcf;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
+  color: inherit;
+}
+
+.navbar .navbar-nav > li > a {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.nodes text {
+  font-size: 5px;
+  color: "black";
+}
+
+.path path{
+  stroke: #999;
+  stroke-opacity: 0.6;
+  fill: none;
+  opacity: 0.7;
+}
+
+.domain {
+  stroke: #b2bbbe;
+  stroke-width: 2;
+}
+
+.axis > g > circle {
+  stroke: #b2bbbe;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #2f90b9;
+  border-color: #2f90b9;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: #2f90b9;
+}
+
+/* footer */
+.absolute{
+	  width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.relative{
+	width: 100%;
+	position: relative;
+	bottom: 0;
+}
+
+.fixed{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 250px;					
+    height: 30px;					
+    padding: 2px;				
+    font-size: 8px;	
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+    background: #f7f4ed;	
+    border: 0px;		
+    border-radius: 4px;			
+    pointer-events: none;		
+    text-align:center;	
+    line-height: 28px;
+}
+
+/* 附加导航 */
+ul.nav-tabs{
+    width: 100px;
+    margin-top: 20px;
+    /* width: 140px;
+    margin-top: 20px; */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+ul.nav-tabs li:first-child{
+    border-top: none;
+}
+ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+ul.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+
+/* forceDirected Graph */
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+  stroke-width: 1px;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+/* matrix */
+.grid {
+  stroke: #ccccd6;
+  stroke-width: 0.2px; 
+  fill: #66a9c9;
+} 
+.arc {
+  stroke: #9A8B7A;
+	fill: none;
+}
+.highlight-bar {
+	fill: black;
+	stroke: white;
+	opacity: 0.1;
+}
+.highlight-bar-filter {
+	fill: black;
+	stroke: white;
+	opacity: 0.1;
+}
+text.active {
+  fill : #e77c8e;
+  font-weight:bold;
+}
