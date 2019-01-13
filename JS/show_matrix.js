@@ -59,7 +59,7 @@ show_matrix = function (data, group, width, height){
                 return `translate(${(i * gridLength + gridLength / 2)}, -2) rotate(315)`; 
             })
             .attr("id", function (d, i) { return i; })
-            .text(function (d) { return d.fullname; })
+            .text(d => d.fullname)
             .style("text-anchor", "start")
             .style("font-size", "4px");
     // yAxas text
@@ -70,20 +70,22 @@ show_matrix = function (data, group, width, height){
         .data(data.nodes)
         .enter()
         .append("text")
-        .attr("y", (d, i) => i * gridLength + gridLength/1.5)
-        .text(d => d.fullname)
-        .style("text-anchor", "end")
-        .style("font-size", "4px")
-
+            .attr("y", (d, i) => i * gridLength + gridLength/1.5)
+            .attr("id", function (d, i) { return i; })
+            .text(d => d.fullname)
+            .style("text-anchor", "end")
+            .style("font-size", "4px");
+            
     // Linkage
     grid.on("mouseover", function (p) {
         if(p.weight != 0){
+            d3.selectAll(".row text").classed("active", function (d, i) { return i == p.y; });
+            d3.selectAll(".column text").classed("active", function (d, i) { return i == p.x; });
             dispatch.apply("hover", this, [p]);
             d3.select(this)
                 .style("fill", "orange")
                 .style("stroke-width", "0.5px")
                 .style("stroke", "#db8540");
-
             var domain_node = [];
             var count = 0;
             data.nodes.forEach(node => {
@@ -94,9 +96,6 @@ show_matrix = function (data, group, width, height){
             var x = d3.scaleBand()
                 .domain(domain_node)
                 .range([0, width / 1.5]);
-
-            d3.selectAll(".row text").classed("active", function (d, i) { return i == p.y; });
-            d3.selectAll(".column text").classed("active", function (d, i) { return i == p.x; });
             group.append("g")
                 .attr("transform", "translate(60,40)")
                 .attr("class", "highlight-bar")
